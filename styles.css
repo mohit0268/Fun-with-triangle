@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#2C394B;
+    --secondary-color:#EEEEEE;
+    --link-color:#96BAFF;
+    /* --light-gray:#E8EAE6; */
+}
+
+body{
+    text-align: center;
+    background-color: lightblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* navigation bar */
+.nav{
+    max-width: 100%;
+    margin:auto;
+    height:20%;
+    color:var(--secondary-color);
+    background-color:var(--primary-color);
+    
+}
+.nav ul{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    text-transform: capitalize;
+    padding:3rem;
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.nav ul li{
+    list-style: none;
+    margin:1rem;
+}
+.nav-link{
+    color:var(--secondary-color);
+
+}
+.nav-link:hover{
+    color:var(--link-color);
+}
+
+  
+
+
+/* container */
+.container{
+    max-width: 70%;
+    margin:auto;
+    height:auto;
+    padding:3rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    margin-top:1rem;
+    
+}
+h1{
+    padding:2rem;
+    color:var(--primary-color);
+    font-size: 4rem;
+    animation: text 5s linear infinite;
+}
+p{
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin:auto;
+}
+@keyframes text {
+    0%{
+        color:blue;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color:greenyellow;
+    }
+    100%{
+        color:orange
+    }
+}
+.input,p{
+    max-width:90%;
+    font-size: 2rem;
+    margin:auto;
+    background-color: #2C394B;
+    padding:1.5rem;
+
+}
+
+input{
+    line-height: 2rem;
+
+}
+
+button{
+    margin:1rem;
+    padding:0.5rem;
+    font-size: 1.2rem;
+    font-size: bold;
+    background-color:var(--secondary-color);
+    border:1px solid var(--link-color);
+    border-radius:5px;
+}
+button:hover{
+    color:lightblue;
+    background-color: var(--link-color);
+    border:none;
+}
+.output{
+    max-width: 80%;
+    margin:auto;
+    padding:1rem;
+    font-size: 2rem;
+    color:var(--primary-color);
+    background-color: var(--link-color);
+}
+
+
+@media(max-width:600px){
+    .nav ul{
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+        font-size: 1.2rem;
+        padding:2.5rem 1rem ;
+    
+    } 
+
+    h1{
+        padding:1rem;
+        font-size: 3rem;
+    }
+    .input{
+        font-size: 1.5rem;
+        padding:1rem;
+    }   
+    .area{
+        font-size: 1rem;
+    }
+    .output{
+        font-size: 1.5rem;
+    }
+}
+

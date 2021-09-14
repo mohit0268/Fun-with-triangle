@@ -4,20 +4,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is triangle?</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class="nav-link active">Is Triangle?</a></li>
+            <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+            <li><a href="hypotenuse.html" class="nav-link active">Hypotenuse</a></li>
+            <li><a href="area.html" class="nav-link active">Area</a></li>
+        </ul>
+    </div>
+    <div class="container">
     <h1>Is Triangle?</h1>
-    <label for="Angle1">Angle 1</label>
-    <input type="number" name=Angle1 class="angle">
-
-    <label for="Angle2">Angle 2</label>
-    <input type="number" name=Angle2 class="angle">
+    <div class="input">
+        <label for="Angle1">Angle 1</label>
+        <input type="number" name=Angle1 class="angle">
+    </div>
     
-    <label for="Angle3">Angle 3</label>
-    <input type="number" name=Angle1 class="angle">
+    <div class="input">
+        <label for="Angle2">Angle 2</label>
+        <input type="number" name=Angle2 class="angle">
+    </div>
+    
+    <div class="input">
+        <label for="Angle3">Angle 3</label>
+        <input type="number" name=Angle3 class="angle">
+    </div>
+   
     <button id="triangle-btn">Submit</button>
-    <div id="triangle-output"></div>
+    <div id="triangle-output" class="output"></div>
 
+</div>
     <script src="app.js"></script>
 </body>
 </html>

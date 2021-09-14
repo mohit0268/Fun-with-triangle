@@ -4,12 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class="nav-link active">Is Triangle?</a></li>
+            <li><a href="quiz.html" class="nav-link active">Quiz</a></li>
+            <li><a href="hypotenuse.html" class="nav-link active">Hypotenuse</a></li>
+            <li><a href="area.html" class="nav-link active">Area</a></li>
+        </ul>
+    </div>
+    <div class="container">
     <h1>Triangle Quiz</h1>
     <form class="form-quiz">
         <div class="question-container">
             <p>1.what is the third angle for the triangle where angle1=45° and angle2=45°?</p>
+            
+        <div class="input">
             <label>
                 <input type="radio" name="question1" value="45°">
                 45°
@@ -22,14 +34,17 @@
                 <input type="radio" name="question1" value="90°">
                 90°
             </label>
+        </div>
 
         </div>
         <div class="question-container">
             <p>2.If a triangle has an angle of 90degree what is it called?</p>
-            <label>
-                <input type="radio" name="question2" value="Acute">
-                acute
-            </label>
+            <div class="input">
+                <label>
+                    <input type="radio" name="question2" value="Acute">
+                    acute
+                </label>
+                
             <label>
                 <input type="radio" name="question2" value="Optuse">
                 optuse
@@ -38,12 +53,16 @@
                 <input type="radio" name="question2" value="Right angled">
                 right angle
             </label>
+            </div>
+            
 
         </div>
 
     </form>
     <button type="submit" id="submit-btn">Submit</button>
-    <div id="output"></div>
+    <div id="output" class="output"></div>
+</div>
+
     <script src="quiz.js"></script>
 </body>
 </html>
